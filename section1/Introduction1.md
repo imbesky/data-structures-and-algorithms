@@ -100,7 +100,7 @@ public class Demo {
 	literal == anotherLiteral -> false
 	literal == "string" -> true
 	object == "string" -> false
-	object == new String("This is a string.") -> false
+	object == new String("string") -> false
 	"string" == "string" -> true
 	
 	using equals(), all the examples above will be true
