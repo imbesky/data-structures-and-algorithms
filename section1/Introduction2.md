@@ -44,4 +44,4 @@
 #### Interface
 
 - allows the implementing class to define a custom ordering
-- can used to compare two objects of the same type using `compare()`
+- can be used to compare two objects of the same type using `compare()`
