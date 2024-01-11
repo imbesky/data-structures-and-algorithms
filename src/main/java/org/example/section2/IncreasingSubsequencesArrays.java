@@ -26,19 +26,10 @@ public class IncreasingSubsequencesArrays {
         for (int i = 0; i < array.size(); i++) {
             List<Integer> subArray = new ArrayList<>(array);
             subArray.remove(i);
-            if (notCounted(subArray, alreadyAdded)){
+            if (!alreadyAdded.contains(subArray)){
                 count += findThem(subArray, alreadyAdded);
             }
         }
         return count;
-    }
-
-    private static boolean notCounted(List<Integer> compare, List<List<Integer>> origins){
-        for (List<Integer> origin : origins){
-            if (origin.equals(compare)){
-                return false;
-            }
-        }
-        return true;
     }
 }
