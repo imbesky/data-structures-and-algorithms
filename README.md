@@ -5,13 +5,19 @@ repository to save `Data Structures & Algorithms` studying records based on lect
 ## Sections
 
 ### Ⅰ. ArrayLists, LinkedLists, Stacks, and Queues
+
 1. Introduction and Review
 2. ArrayLists and Recursion
 3. LinkedLists
 4. Stacks and Queues
-5. Wrap-up
 
 ### Ⅱ. Binary Trees, Heaps, SkipLists and HashMaps
+
+1. BST Introductions
+2. BST Operations & SkipLists
+3. Heaps
+4. HashMaps
+
 ### Ⅲ. AVL and 2-4 Trees, Divide and Conquer Algorithms
 ### Ⅳ. Pattern Matching, Dijkstra’s, MST, and Dynamic Programming Algorithms
 
