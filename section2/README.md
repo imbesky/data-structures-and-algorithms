@@ -2,10 +2,10 @@
 
 ## Modules 
 
-1. BST Introductions
-2. BST Operations & SkipLists
-3. Heaps
-4. HashMaps
+5. BST Introductions
+6. BST Operations & SkipLists
+7. Heaps
+8. HashMaps
 
 ## Lecture Link
 
