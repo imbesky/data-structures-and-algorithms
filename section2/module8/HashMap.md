@@ -157,7 +157,8 @@ if a collision occurs at a given index, add multiple of `c` to the original inde
 
 #### Hash index
 
-- `H(k)`: first hash, used to calculate original index
-- `D(k)`: second hash, used to calculate probing constant(`c`)
-	- = `q - H(k) % q`
+- `H(key)`: first hash, used to calculate original index
+    - = `key % length`
+- `D(key)`: second hash, used to calculate probing constant(`c`)
+	- = `q - key % q`
 	- `q`: prime number, `q < N`
