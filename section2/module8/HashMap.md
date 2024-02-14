@@ -66,14 +66,13 @@ chaining all the entries are put at the exact index calculated
 - the first value of the index became head
 - after the first value, add to the front of the chain
 
-## Interval chaining
+## Linear probing 
 
+- used to store only one entry in each index of the array
 - **open addressing** strategy
-  - entries may not end up at the original index calcualated
+  - entries may not end up at the original index calcualated 
 
-### Linear probing 
-
-- used to store only one entry in each index of the array 
+### Index concept 
 
 `index = (h + original index) % length of the array` 
 
@@ -81,7 +80,7 @@ chaining all the entries are put at the exact index calculated
 - `h` = number of times probed
   - max = N 
 
-#### Removing 
+### Removing 
 
 1. look at index `hashcode % length`
 2. if the key is different, probe; move to index of `index + 1`
@@ -89,31 +88,36 @@ chaining all the entries are put at the exact index calculated
 3. insert marker at the index of the removed key
   - markers are perfomed as boolean 
 
-#### Putting 
+### Putting 
 
 at the proper index of key(driven by `hashcode % length`), there can be 4 possible shenarios 
 
-1. valid and unequal key 
-	- probe 
-2. valid and equal key 
-	- update the value 
+#### Valid and unequal key 
 
-3. deleted(marker) 
-	- if it is the first marker encountered,  save index
-	- probe 
+- probe 
 
-4. null
-	- if there is a saved marker, put at that location
-	- else, put in this location 
+#### valid and equal key 
 
-#### Resize 
+- update the value 
+
+#### Deleted(marker) 
+
+- if it is the first marker encountered,  save index
+- probe 
+
+#### Null
+
+- if there is a saved marker, put at that location
+- else, put in this location 
+
+### Resize 
 
 1. create a new backing array of lager capacity
 2. loop old backing array
 3. rehash all cells to backing array
 4. skip all markers 
 
-#### Problem 
+### Problem 
 
 = primary clustering = turtling 
 
@@ -146,7 +150,7 @@ Secondary clustering
 #### Solution to infinite probing 
 
 1. continually resize until a spot is eventually found
-2. impose a set of conditions on the table to ensure that this scenario never occurs
+2. impose a set of conditions on the table to ensure that this scenario never occurs 
 
 ### Double hashing
 
